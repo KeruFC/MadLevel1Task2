@@ -19,6 +19,25 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun checkAnswers() {
-        
+        val answerOne = binding.answerOne.text.toString()
+        val answerTwo = binding.answerTwo.text.toString()
+        val answerThree = binding.answerThree.text.toString()
+        val answerFour = binding.answerFour.text.toString()
+
+        var amountCorrectAnswers = 0;
+
+        if(answerOne == getString(R.string.T)){
+            amountCorrectAnswers += 1
+        }
+        if(answerTwo == getString(R.string.F)){
+            amountCorrectAnswers += 1
+        }
+        if(answerThree == getString(R.string.F)){
+            amountCorrectAnswers += 1
+        }
+        if(answerFour == getString(R.string.F)){
+            amountCorrectAnswers += 1
+        }
+
     }
 }

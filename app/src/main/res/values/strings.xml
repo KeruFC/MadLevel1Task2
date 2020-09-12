@@ -7,4 +7,5 @@
     <string name="F">F</string>
     <string name="description">Conjunction (AND)</string>
     <string name="submit">SUBMIT</string>
+    <string name="amount">Amount of correct answers %d</string>
 </resources>
