@@ -2,6 +2,7 @@ package com.example.madlevel1task2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.madlevel1task2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -38,6 +39,8 @@ class MainActivity : AppCompatActivity() {
         if(answerFour == getString(R.string.F)){
             amountCorrectAnswers += 1
         }
+
+        Toast.makeText(this, getString(R.string.amount, amountCorrectAnswers), Toast.LENGTH_LONG).show()
 
     }
 }
